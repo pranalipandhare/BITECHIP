@@ -43,6 +43,24 @@ p {
     margin: 40px 0;
 }
 
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.normal:hover{
+    color: white;
+    background-color:rgb(243, 181, 25);
+}
+
 body{
     width: 100%;
 }
@@ -130,6 +148,9 @@ body{
 #hero button:hover{
     color: rgb(252, 252, 34);
 }
+
+/* feature section */
+
 #feature .fe-box img{
     height: 100px;
     margin-bottom: 15px; 
@@ -182,3 +203,109 @@ body{
  #feature .fe-box:nth-child(6) h6{
     background-color: rgb(246, 255, 81);
  }
+
+ /* section products */
+
+#product1{
+    text-align: center;
+} 
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 15px ;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px; 
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* Banner Section */
+
+#banner{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/b12.jpg");
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: white;
+    font-size: 40px;
+    margin-top: -50px;
+}
+#banner h2{
+    color: white;
+    font-size: 50px;
+    padding: 30px 0;  
+}
+#banner h2 span{
+    color: rgb(48, 2, 2);
+}
