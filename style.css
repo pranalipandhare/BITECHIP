@@ -54,8 +54,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 40px 45px;
-    background: rgb(38, 172, 193);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.6);
+    background:  rgb(38, 172, 193);
+    box-shadow: 0 5px rgba(89, 84, 84, 0.6);
     z-index: 900;
     position: sticky;
     left: 0;
@@ -130,3 +130,55 @@ body{
 #hero button:hover{
     color: rgb(252, 252, 34);
 }
+#feature .fe-box img{
+    height: 100px;
+    margin-bottom: 15px; 
+    display: block;
+    transition-duration: 1s;
+ }
+ #feature .fe-box img:hover{
+    transform: scaleX(0.2);
+ }
+ #feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ #feature .fe-box{
+    width: 170px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 5px 5px 10px rgb(110, 108, 108);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 15px 0;
+ }
+ #feature .fe-box:hover{
+    box-shadow: 10px 10px 25px rgb(110, 108, 108);
+ }
+ #feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 7px 6px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: rgb(245, 125, 145);
+ }
+
+ #feature .fe-box:nth-child(2) h6{
+    background-color: rgb(122, 203, 238);
+ }
+ #feature .fe-box:nth-child(3) h6{
+    background-color: rgb(235, 165, 249);
+ }
+ #feature .fe-box:nth-child(4) h6{
+    background-color: rgb(142, 240, 97);
+ }
+ #feature .fe-box:nth-child(5) h6{
+    background-color: rgb(235, 152, 100);
+ }
+ #feature .fe-box:nth-child(6) h6{
+    background-color: rgb(246, 255, 81);
+ }
