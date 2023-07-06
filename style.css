@@ -72,7 +72,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 40px 45px;
-    background-color:  rgb(38, 172, 193);
+    background-color:  rgb(235, 165, 249);/*rgb(38, 172, 193);*/
     box-shadow: 0 5px rgba(89, 84, 84, 0.6);
     z-index: 900;
     position: sticky;
