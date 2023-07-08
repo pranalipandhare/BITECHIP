@@ -133,7 +133,7 @@ body{
 /*Home page*/
 
 #hero{
-    background-image: url("img/bgt.jpg");
+    /*background-image: url("img/bgt.jpg");*/
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -162,6 +162,36 @@ body{
 }
 #hero button:hover{
     color: rgb(252, 252, 34);
+}
+
+#hero .video-container video{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#hero .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, 0.02);
+    position: relative;
+    top: 10rem;
+}
+
+#hero .controls .vid-btn{
+    height: 1rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    margin: 0.2rem;
+}
+#hero .controls .vid-btn.active{
+    background-color: orange ;
 }
 
 /* feature section */
@@ -335,8 +365,8 @@ body{
     display: flex;
     flex-direction:column;
     justify-content: center;
-    align-items: flex-end;
     background-image: url("img/b3.jpg");
+    align-items: flex-end;
     min-width: 580px;
     height: 60vh;
     background-size: cover;
@@ -344,27 +374,31 @@ body{
     padding: 30px;
     transition: 2s;
 }
+
 #sm-banner .banner-box2{
     background-image: url("img/b4.jpg");
 }
 
 #sm-banner h4{
-    color: white;
-    font-size: 20px;
-    font-weight: 300;
+    margin-top: 80px;
+    color: rgb(53, 53, 108);
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Arial Narrow Bold';
 }
 #sm-banner h2{
-    color: white;
+    color: rgb(53, 53, 108);
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 800;
     font-family:'Arial Narrow Bold';
  }
 
  #sm-banner span{
-    color: white;
-    font-size: 14px;
+    color: rgb(53, 53, 108);
+    font-size: 15px;
     font-weight: 500;
     padding-bottom: 15px;
+    font-family:'Arial Narrow Bold';
  }
 
  #sm-banner .banner-box:hover button{
@@ -410,14 +444,14 @@ body{
     background-image: url(img/b10.jpg);
 }
 #banner3 h3{
-    color: white;
+    color: rgb(53, 53, 108);
     font-weight: 900;
-    font-size: 22px;
+    font-size: 25px;
 }
 #banner3 h2{
-    color: blue;
+    color: rgb(53, 53, 108);
     font-weight: 800;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 #newsletter{
@@ -485,3 +519,56 @@ footer .col{
     align-items: flex-start;
     margin-bottom: 20px;
 }
+
+footer .logo{
+    margin-bottom:30px;
+    width: 20vh;
+}
+footer .logo1{
+    width: 40vh;
+}
+
+
+footer h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .follow i:hover,
+footer a:hover,
+footer p:hover{
+    color: #1ccee6;
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 4px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .copyright{
+    padding: 5px 20px;
+    text-align: center; 
+}      
