@@ -81,18 +81,14 @@ body{
 }
 
 /* Header start */
-
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 45px;
-    background-color:  rgb(235, 165, 249);/*rgb(38, 172, 193);*/
-    box-shadow: 0 5px rgba(89, 84, 84, 0.6);
-    z-index: 900;
+    padding: 25px 250px;
+    background-color: #088178;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
     position: sticky;
-    left: 0;
-    top: 0;
 }
 
 #navbar{
@@ -124,16 +120,36 @@ body{
     content: "";
     width: 35%;
     height: 1.5px;
-    background-color: white ;
+    background-color: white;
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#header .logo{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    margin-right: 60px;
+    margin-left: -80px;
+    transition-duration: 1s;
+}
+#header .logo:hover{
+    font-size: 2.6rem;
+    color: black;
+    transform: scaleX(0.1);
+}
+
 /*Home page*/
 
 #hero{
-    /*background-image: url("img/bgt.jpg");*/
+    background-image: url("img/bgt.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -183,12 +199,13 @@ body{
 
 #hero .controls .vid-btn{
     height: 1rem;
-    width: 2rem;
-    display: inline-block;
+    width: 1rem;
+    display: inline-flex;
     border-radius: 50%;
     background: white;
     cursor: pointer;
-    margin: 0.2rem;
+    margin: 0.1rem;
+    padding-left: 15px;
 }
 #hero .controls .vid-btn.active{
     background-color: orange ;
@@ -572,3 +589,10 @@ footer .copyright{
     padding: 5px 20px;
     text-align: center; 
 }      
+
+
+/* Start Media Query */
+
+@media (max-width: 477px) {
+    
+}
