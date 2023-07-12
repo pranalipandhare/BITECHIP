@@ -80,13 +80,13 @@ body{
     width: 100%;
 }
 
-/* Header start */
+/* Header start  rgb(228, 200, 252) rgb(255, 201, 246)*/
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 250px;
-    background-color: #088178;
+    background-color:#0e9990 ;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
     position: sticky;
 }
@@ -149,7 +149,7 @@ body{
 /*Home page*/
 
 #hero{
-    background-image: url("img/bgt.jpg");
+    background-image: url("img/bgt1.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -163,21 +163,25 @@ body{
 #hero h4{
     padding-bottom: 15px;
 }
+
 #hero h1{
-    color: rgb(252, 252, 34);
+    color: rgb(218, 182, 249);
 }
-#hero button{
-    background-image: url("img/btn.png");
-    background-color: transparent;
-    border: 0;
-    padding: 14px 80px 14px 65px;
-    background-repeat: no-repeat;
-    cursor: pointer;
+
+#hero p{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 17px;
+}
+
+#hero button{
+    font-weight: 700;
+    background-color: #088178;
+    color: white;
 }
 #hero button:hover{
-    color: rgb(252, 252, 34);
+    background-color: #19988e;
+    color: white;
+    font-size: 16px;
 }
 
 #hero .video-container video{
@@ -884,7 +888,8 @@ footer .copyright{
 }
 #form-details form button:hover{
     background-color: #19988e;
-    color: black;
+    color: white;
+    font-size: 15px;
 }
 
 #form-details .people div{
